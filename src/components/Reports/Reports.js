@@ -149,7 +149,7 @@ function Reports() {
           </tbody>
         </table>
       ) : (
-        history.push("/home")
+        history.push("/")
       )}
       {loader}
       <Pagination

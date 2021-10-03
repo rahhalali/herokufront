@@ -16,7 +16,7 @@ export const Header = () => {
   // }
   function logout() {
     localStorage.removeItem("login");
-    history.push("/home");
+    history.push("/");
     setShow(false);
   }
   function login() {

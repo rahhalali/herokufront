@@ -347,7 +347,7 @@ export const EditProject = () => {
           {loader}
         </>
       ) : (
-        history.push("/home")
+        history.push("/")
       )}
     </div>
   );

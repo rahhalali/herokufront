@@ -252,7 +252,7 @@ export const EmployeeKpi = () => {
           {loader}
         </div>
       ) : (
-        history.push("/home")
+        history.push("/")
       )}
     </>
   );

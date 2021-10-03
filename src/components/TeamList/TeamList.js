@@ -169,7 +169,7 @@ export const TeamList = () => {
           />
         </>
       ) : (
-        history.push("/home")
+        history.push("/")
       )}
       {loader}
     </div>

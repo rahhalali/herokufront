@@ -98,7 +98,7 @@ export const AddTeam = () => {
           </div>
         </div>
       ) : (
-        history.push("/home")
+        history.push("/")
       )}
     </div>
   );

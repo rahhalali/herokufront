@@ -183,7 +183,7 @@ export const ProjectTeamList = () => {
           />
         </>
       ) : (
-        history.push("/home")
+        history.push("/")
       )}
       {loader}
     </div>

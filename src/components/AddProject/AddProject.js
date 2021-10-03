@@ -100,7 +100,7 @@ export const AddProject = () => {
         </div>
       </div>
     </div>) : (
-      history.push('/home')
+      history.push('/')
     )
     }
     

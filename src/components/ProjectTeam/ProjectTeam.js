@@ -186,7 +186,7 @@ export const ProjectTeam = () => {
           </div>
         </div>
       ) : (
-        history.push("/home")
+        history.push("/")
       )}
     </>
   );

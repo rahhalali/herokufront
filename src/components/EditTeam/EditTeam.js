@@ -23,7 +23,7 @@ export const EditTeam = () => {
             Submit
           </button>
         </div>
-      </div>) :(history.push("/home"))
+      </div>) :(history.push("/"))
       }
 
     </div>

@@ -321,7 +321,7 @@ export function AddEmployee(props) {
           </div>
         </div>
       ) : (
-        history.push("/home")
+        history.push("/")
       )}
     </>
   );

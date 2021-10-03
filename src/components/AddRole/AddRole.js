@@ -101,7 +101,7 @@ export const AddRole = () => {
         </div>
       </div>
     </div>) : (
-      history.push('/home')
+      history.push('/')
     )
     }
     

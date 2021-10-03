@@ -33,7 +33,7 @@ const App = () => {
           <Header />
           <EmployeeReport />
         </Route>
-        <Route exact path="/home">
+        <Route exact path="/">
           <Header />
           <EmployeeList />
         </Route>

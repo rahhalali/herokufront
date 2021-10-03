@@ -171,7 +171,7 @@ export const ProjectList = () => {
           />
         </>
       ) : (
-        history.push("/home")
+        history.push("/")
       )}
       {loader}
     </div>

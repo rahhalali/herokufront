@@ -131,7 +131,7 @@ export const AddAdmins = () => {
           </div>
         </div>
       ) : (
-        history.push("/home")
+        history.push("/")
       )}
     </>
   );

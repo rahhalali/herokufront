@@ -168,7 +168,7 @@ function ListRole() {
           />
         </>
       ) : (
-        history.push("/home")
+        history.push("/")
       )}
       {loader}
     </div>
