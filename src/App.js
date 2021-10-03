@@ -24,7 +24,7 @@ const App = () => {
   useEffect(() => {}, []);
   return (
     <div>
-      {/* <Switch>
+      <Switch>
         <Route exact path="/reports">
           <Header />
           <Reports />
@@ -105,8 +105,7 @@ const App = () => {
           <AddAdmins />
         </Route>
       </Switch>
-      <Apptest /> */}
-      <h1>hello</h1>
+      <Apptest />
     </div>
   );
 };
