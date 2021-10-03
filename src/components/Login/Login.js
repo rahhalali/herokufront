@@ -20,7 +20,7 @@ function Login() {
    
     let item = { email, password };
    
-    let result = await fetch(`https://ancient-savannah-54184.herokuapp.com/api/login`, {
+    let result = await fetch(`https://ancient-savannah-54184.herokuapp.com/login`, {
       method: "POST",
       body: JSON.stringify(item),
       headers: {
