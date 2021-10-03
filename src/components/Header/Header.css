@@ -1,0 +1,35 @@
+.header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  margin: auto;
+  height: 100px;
+  background-color: #313235;
+}
+
+.header-title {
+  display: flex;
+  justify-content: center;
+}
+.header-title span{
+    color: #1dc4e7;
+}
+.header-title p {
+ margin-top: 25px;   
+}
+.logout-bnt{
+    display: block;
+    color: white;
+    background-color: #1dc4e7;
+    outline: none;
+    border: none;
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: large;
+    cursor: pointer;
+}

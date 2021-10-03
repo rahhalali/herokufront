@@ -1,0 +1,9 @@
+#BTNADD {
+    width: 200px;
+    font-size: 20px;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    background-color: #1dc4e7 !important;
+  }

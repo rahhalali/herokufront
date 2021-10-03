@@ -1,0 +1,50 @@
+.chartContainer {
+  width: 80%;
+  /* margin: 5% auto 5% auto;
+  display: grid; */
+  /* grid-template-columns: 1fr 1fr; */
+  /* justify-content: center; */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+/* .chartContainer > * {
+  margin-left: 10%;
+} */
+
+.employeelist-charts {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+  height: 8vh;
+}
+.btn-char {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  height: 50px;
+  border-radius: 12px;
+  border: 0;
+  background-color: cadetblue;
+  color: white;
+  cursor: pointer;
+}
+.btn-char:hover {
+  color: white;
+  background-color: rgb(6, 102, 97, 231);
+}
+/* .loginiconzemloyeelist{
+  margin-left: auto;
+}
+#check:checked ~.chartContainer{
+  display: none;
+  transition: 0.5s linear;
+} */
+
+.chartContainer {
+  margin-top: 130px;
+}

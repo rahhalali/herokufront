@@ -1,0 +1,36 @@
+.Search-Bttns {
+  width: 50%;
+  margin: 2% auto;
+  display: flex;
+  justify-content: space-around;
+}
+.search label {
+  margin: 0 2% 5% 12%;
+  font-weight: bold;
+  font-family: Arial;
+}
+.search select {
+  width: 100%;
+  height: 40px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-size: larger;
+  cursor: pointer;
+  background-color: lightgray !important;
+}
+.search2{
+    display: flex;
+    align-self: flex-end;
+   
+}
+.search-3 button{
+     width: 100px;
+     font-size: 20px;
+     padding: 5px 10px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    background-color: rgb(198, 245, 166) !important;
+}
+

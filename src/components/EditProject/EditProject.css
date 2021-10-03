@@ -1,0 +1,86 @@
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+/* .styled-table tr:nth-child(even) {
+  background-color: #f8faff;
+} */
+.styled-table thead tr {
+  background-color: #1dc4e7;
+  color: #ffffff;
+  text-align: left;
+}
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+}
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+/* .styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+} */
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #313235;
+}
+.edit,
+.delete,
+.view,
+.close-btn {
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  border: none;
+  width: 100px;
+  cursor: pointer;
+  outline: none;
+}
+.delete {
+  background-color: red;
+}
+.edit {
+  background-color: #1dc4e7;
+}
+.close-btn {
+  background-color: red;
+}
+.close-btn:hover {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+.view {
+  background-color: limegreen;
+}
+.editproject input.INPUT {
+  display: block;
+  width: 80%;
+  margin: 130px auto 0 auto;
+  padding: 10px;
+  border-radius: 9px;
+  outline: 0;
+}
+.editproject input::placeholder {
+  color: black;
+}
+
+.TTD tr,
+th,
+td {
+  text-align: center;
+}
+.editproject #BTNADD {
+  width: 200px;
+  font-size: 20px;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  background-color: #1dc4e7 !important;
+}

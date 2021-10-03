@@ -1,0 +1,12 @@
+.high .high_hover:hover{
+    background-color: rgb(158, 144, 144);
+    
+}
+.high tr{
+    cursor: pointer;
+}
+.high .link-ink{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
