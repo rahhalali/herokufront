@@ -12,7 +12,7 @@ export const AddProject = () => {
   
     let items = { project_name };
    
-    let result = await fetch("http://localhost:8000/api/projects", {
+    let result = await fetch("https://ancient-savannah-54184.herokuapp.com/api/projects", {
       method: "POST",
       headers: {
         Authorization: token,

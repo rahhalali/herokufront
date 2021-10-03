@@ -12,7 +12,7 @@ export const PopupTeam = ({ trigger, valueteam, setTrigger, getData }) => {
     let formData = new FormData();
     formData.append("name", name);
     let result = await fetch(
-      `http://localhost:8000/api/update-team/${Id}?_method=PUT`,
+      `https://ancient-savannah-54184.herokuapp.com/api/update-team/${Id}?_method=PUT`,
       {
         method: "POST",
         headers: {

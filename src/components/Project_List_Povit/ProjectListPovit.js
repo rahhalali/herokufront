@@ -14,7 +14,7 @@ export const ProjectListPovit = ({ trigger, setTrigger, data, getData ,id }) => 
 
 
     let result = await fetch(
-      `http://localhost:8000/api/delete-project-from-team/${TeamID}/project/${id} `,
+      `https://ancient-savannah-54184.herokuapp.com/api/delete-project-from-team/${TeamID}/project/${id} `,
       {
         method: "DELETE",
         headers: {

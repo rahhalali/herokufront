@@ -31,7 +31,7 @@ export const ProjectTeamList = () => {
   async function Show (id) {
     showLoader();
     let result = await fetch(
-      "http://localhost:8000/api/get/project-team-one/" + id,
+      "https://ancient-savannah-54184.herokuapp.com/api/get/project-team-one/" + id,
       {
         method: "GET",
         headers: {
@@ -53,7 +53,7 @@ export const ProjectTeamList = () => {
 
   async function getData() {
     showLoader();
-    let result = await fetch("http://localhost:8000/api/get/project-teams", {
+    let result = await fetch("https://ancient-savannah-54184.herokuapp.com/api/get/project-teams", {
       method: "GET",
       headers: {
         Accept: "application/json",

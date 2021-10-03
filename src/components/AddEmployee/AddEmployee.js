@@ -42,7 +42,7 @@ export function AddEmployee(props) {
   // useEffect to get the teams
 
   useEffect(async () => {
-    let team = await fetch("http://localhost:8000/api/get/teams", {
+    let team = await fetch("https://ancient-savannah-54184.herokuapp.com/api/get/teams", {
       method: "GET",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("login")}`,
@@ -51,7 +51,7 @@ export function AddEmployee(props) {
       },
     });
 
-    let project = await fetch("http://localhost:8000/api/get/projects", {
+    let project = await fetch("https://ancient-savannah-54184.herokuapp.com/api/get/projects", {
       method: "GET",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("login")}`,
@@ -59,7 +59,7 @@ export function AddEmployee(props) {
         Accept: "application/json",
       },
     });
-    let role = await fetch("http://localhost:8000/api/get/roles", {
+    let role = await fetch("https://ancient-savannah-54184.herokuapp.com/api/get/roles", {
       method: "GET",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("login")}`,
@@ -93,7 +93,7 @@ export function AddEmployee(props) {
     
     formData.append("role_id", role_id);
 
-    let result = await fetch("http://localhost:8000/api/add-employee", {
+    let result = await fetch("https://ancient-savannah-54184.herokuapp.com/api/add-employee", {
       method: "POST",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("login")}`,

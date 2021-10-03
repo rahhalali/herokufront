@@ -13,7 +13,7 @@ export const KPI = () => {
 
     formData.append("kpi_name", name);
 
-    let result = await fetch("http://localhost:8000/api/kpis", {
+    let result = await fetch("https://ancient-savannah-54184.herokuapp.com/api/kpis", {
       method: "POST",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("login")}`,

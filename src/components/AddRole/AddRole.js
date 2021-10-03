@@ -12,7 +12,7 @@ export const AddRole = () => {
   
     let items = { role_name };
     
-    let result = await fetch("http://localhost:8000/api/roles", {
+    let result = await fetch("https://ancient-savannah-54184.herokuapp.com/api/roles", {
       method: "POST",
       headers: {
         Authorization: token,

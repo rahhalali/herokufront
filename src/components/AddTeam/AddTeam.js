@@ -12,7 +12,7 @@ export const AddTeam = () => {
    
     let items = { name };
     
-    let result = await fetch("http://localhost:8000/api/teams", {
+    let result = await fetch("https://ancient-savannah-54184.herokuapp.com/api/teams", {
       method: "POST",
       headers: {
         Authorization: token,

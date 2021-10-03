@@ -31,7 +31,7 @@ export const TeamList = () => {
   },[]);
 
   async function deleteemployee(id) {
-    let result = await fetch("http://localhost:8000/api/delete-team/" + id, {
+    let result = await fetch("https://ancient-savannah-54184.herokuapp.com/api/delete-team/" + id, {
       method: "DELETE",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("login")}`,
@@ -69,7 +69,7 @@ export const TeamList = () => {
   async function getData() {
     showLoader();
 
-    let result = await fetch("http://localhost:8000/api/get/teams", {
+    let result = await fetch("https://ancient-savannah-54184.herokuapp.com/api/get/teams", {
       method: "GET",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("login")}`,
@@ -85,7 +85,7 @@ export const TeamList = () => {
   
   const Edit = async(id) => {
     
-    let result = await fetch ("http://localhost:8000/api/get/team-one/"+id,{
+    let result = await fetch ("https://ancient-savannah-54184.herokuapp.com/api/get/team-one/"+id,{
       method:"GET",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("login")}`,

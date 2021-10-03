@@ -17,7 +17,7 @@ export const Search = ({ parentCallback }) => {
        document.getElementById("BTNSEARCH").disabled=true;
     }
    
-    let team = await fetch("http://localhost:8000/api/get/teams", {
+    let team = await fetch("https://ancient-savannah-54184.herokuapp.com/api/get/teams", {
       method: "GET",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("login")}`,
@@ -26,7 +26,7 @@ export const Search = ({ parentCallback }) => {
       },
     });
 
-    let project = await fetch("http://localhost:8000/api/get/projects", {
+    let project = await fetch("https://ancient-savannah-54184.herokuapp.com/api/get/projects", {
       method: "GET",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("login")}`,
@@ -44,7 +44,7 @@ export const Search = ({ parentCallback }) => {
 
 const Filter = async () => {
  
-  let result = await fetch(`http://localhost:8000/api/get/filter/${searchTeam}/project/${searchProject}`,{
+  let result = await fetch(`https://ancient-savannah-54184.herokuapp.com/api/get/filter/${searchTeam}/project/${searchProject}`,{
     method:"GET",
     headers: {
       Authorization: `Bearer ${localStorage.getItem("login")}`,
