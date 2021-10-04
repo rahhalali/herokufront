@@ -54,14 +54,14 @@ export const EmployeeKpi = () => {
     const [loader,showLoader,hideLoader]=useFullPageLoader();
     async function getData() {
         showLoader();
-        let result = await fetch("https://ancient-savannah-54184.herokuapp.com/api/get/employee-list", {
+        let result = await fetch("https://gentle-fortress-49662.herokuapp.com/api/get/employee-list", {
           method: "GET",
           headers: {
             Authorization: `Bearer ${localStorage.getItem("login")}`,
           },
         });
 
-        let result2 = await fetch("https://ancient-savannah-54184.herokuapp.com/api/get/emp_kpi", {
+        let result2 = await fetch("https://gentle-fortress-49662.herokuapp.com/api/get/emp_kpi", {
           method: "GET",
           headers: {
             Authorization: `Bearer ${localStorage.getItem("login")}`,
@@ -88,7 +88,7 @@ export const EmployeeKpi = () => {
     formData.append('kpi_number',rate);
 
 
-    let result =await fetch("https://ancient-savannah-54184.herokuapp.com/api/emp_kpi",{
+    let result =await fetch("https://gentle-fortress-49662.herokuapp.com/api/emp_kpi",{
       method:"POST",
       headers:{
         Authorization: `Bearer ${localStorage.getItem("login")}`,

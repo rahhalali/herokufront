@@ -31,7 +31,7 @@ function Reports() {
 
   async function getData() {
     showLoader();
-    let result = await fetch("https://ancient-savannah-54184.herokuapp.com/api/get/reports", {
+    let result = await fetch("https://gentle-fortress-49662.herokuapp.com/api/get/reports", {
       method: "GET",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("login")}`,
@@ -47,7 +47,7 @@ function Reports() {
     
 
     let result = await fetch(
-      "https://ancient-savannah-54184.herokuapp.com/api/get/project-team-one/" + id,
+      "https://gentle-fortress-49662.herokuapp.com/api/get/project-team-one/" + id,
       {
         method: "GET",
         headers: {
@@ -112,7 +112,7 @@ function Reports() {
                           borderRadius: "50%",
                           border: "1px solid black",
                         }}
-                        src={`https://ancient-savannah-54184.herokuapp.com/` + item.file_path}
+                        src={`https://gentle-fortress-49662.herokuapp.com/` + item.file_path}
                         alt="image"
                       />{" "}
                     </td>

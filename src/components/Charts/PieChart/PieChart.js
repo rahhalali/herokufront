@@ -9,7 +9,7 @@ export const PieChart = () => {
     
     
   
-       let result = await fetch(`https://ancient-savannah-54184.herokuapp.com/api/get/count-employees`,{
+       let result = await fetch(`https://gentle-fortress-49662.herokuapp.com/api/get/count-employees`,{
          method:"GET",
          headers:{
           Authorization: `Bearer ${localStorage.getItem("login")}`,

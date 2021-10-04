@@ -55,7 +55,7 @@ function EmployeeReport() {
   
   useEffect(async () => {
     let result = await fetch(
-      `https://ancient-savannah-54184.herokuapp.com/api/get/employeeee-kpi-number/${id}`,
+      `https://gentle-fortress-49662.herokuapp.com/api/get/employeeee-kpi-number/${id}`,
       {
         method: "GET",
         headers: {
@@ -64,7 +64,7 @@ function EmployeeReport() {
       }
     );
 
-    let results =await fetch(`https://ancient-savannah-54184.herokuapp.com/api/get/employee-kpi-number/${id}/kpi/${Id}`,{
+    let results =await fetch(`https://gentle-fortress-49662.herokuapp.com/api/get/employee-kpi-number/${id}/kpi/${Id}`,{
       method:"GET",
       headers:{
         Authorization: `Bearer ${localStorage.getItem("login")}`,
@@ -90,7 +90,7 @@ function EmployeeReport() {
               <div className="item-a" >
                 <div className="item-a-inner">
                   <img
-                    src={"https://ancient-savannah-54184.herokuapp.com/" + item.file_path}
+                    src={"https://gentle-fortress-49662.herokuapp.com/" + item.file_path}
                     alt="image"
                   />
                   <p className="Paragraph">

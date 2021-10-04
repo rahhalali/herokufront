@@ -16,7 +16,7 @@ export const AddAdmins = () => {
     // Axios.defaults.headers.common['X-CSRF-TOKEN'] = token_var;
     let item = { username, email, password };
   
-    let result = await fetch("https://ancient-savannah-54184.herokuapp.com/api/admins", {
+    let result = await fetch("https://gentle-fortress-49662.herokuapp.com/api/admins", {
       method: "POST",
       headers: {
         "Authorization": `Bearer ${localStorage.getItem("login")}`,

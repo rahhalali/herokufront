@@ -66,7 +66,7 @@ export const EditProject = () => {
   const [loader, showLoader, hideLoader] = useFullPageLoader();
   async function getData() {
     showLoader();
-    let result = await fetch("https://ancient-savannah-54184.herokuapp.com/api/get/employee-list", {
+    let result = await fetch("https://gentle-fortress-49662.herokuapp.com/api/get/employee-list", {
       method: "GET",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("login")}`,
@@ -79,7 +79,7 @@ export const EditProject = () => {
 
   async function deleteemployee(id) {
     let result = await fetch(
-      "https://ancient-savannah-54184.herokuapp.com/api/delete-employee/" + id,
+      "https://gentle-fortress-49662.herokuapp.com/api/delete-employee/" + id,
       {
         method: "DELETE",
         headers: {
@@ -106,7 +106,7 @@ export const EditProject = () => {
   const Edit = async (id) => {
     let token = "Bearer " + localStorage.getItem("login");
     let result1 = await fetch(
-      "https://ancient-savannah-54184.herokuapp.com/api/get/employee-one/" + id,
+      "https://gentle-fortress-49662.herokuapp.com/api/get/employee-one/" + id,
       {
         method: "GET",
         headers: {
@@ -115,7 +115,7 @@ export const EditProject = () => {
       }
     );
 
-    let team = await fetch("https://ancient-savannah-54184.herokuapp.com/api/get/teams", {
+    let team = await fetch("https://gentle-fortress-49662.herokuapp.com/api/get/teams", {
       method: "GET",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("login")}`,
@@ -124,7 +124,7 @@ export const EditProject = () => {
       },
     });
 
-    let project = await fetch("https://ancient-savannah-54184.herokuapp.com/api/get/projects", {
+    let project = await fetch("https://gentle-fortress-49662.herokuapp.com/api/get/projects", {
       method: "GET",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("login")}`,
@@ -132,7 +132,7 @@ export const EditProject = () => {
         Accept: "application/json",
       },
     });
-    let role = await fetch("https://ancient-savannah-54184.herokuapp.com/api/get/roles", {
+    let role = await fetch("https://gentle-fortress-49662.herokuapp.com/api/get/roles", {
       method: "GET",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("login")}`,
@@ -163,7 +163,7 @@ export const EditProject = () => {
   const profile = async (id) => {
     let token = "Bearer " + localStorage.getItem("login");
     let result1 = await fetch(
-      "https://ancient-savannah-54184.herokuapp.com/api/get/employee-one/" + id,
+      "https://gentle-fortress-49662.herokuapp.com/api/get/employee-one/" + id,
       {
         method: "GET",
         headers: {
@@ -191,7 +191,7 @@ export const EditProject = () => {
 
   async function ShowKpi(value) {
     let result = await fetch(
-      `https://ancient-savannah-54184.herokuapp.com/api/get/employee-kpi/${value}`,
+      `https://gentle-fortress-49662.herokuapp.com/api/get/employee-kpi/${value}`,
       {
         method: "GET",
         headers: {
@@ -258,7 +258,7 @@ export const EditProject = () => {
                             borderRadius: "50%",
                             border: "1px solid black",
                           }}
-                          src={`https://ancient-savannah-54184.herokuapp.com/` + item.file_path}
+                          src={`https://gentle-fortress-49662.herokuapp.com/` + item.file_path}
                           alt="image"
                         />{" "}
                       </td>

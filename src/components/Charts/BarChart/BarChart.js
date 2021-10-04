@@ -9,7 +9,7 @@ const chart =  async () => {
     let project = [];
     let team = [];
   
-       let result = await fetch(`https://ancient-savannah-54184.herokuapp.com/api/get/count-projects`,{
+       let result = await fetch(`https://gentle-fortress-49662.herokuapp.com/api/get/count-projects`,{
          method:"GET",
          headers:{
           Authorization: `Bearer ${localStorage.getItem("login")}`,

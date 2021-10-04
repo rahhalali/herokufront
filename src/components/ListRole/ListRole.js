@@ -28,7 +28,7 @@ function ListRole() {
   }, []);
 
   async function deleterole(id) {
-    let result = await fetch("https://ancient-savannah-54184.herokuapp.com/api/delete-role/" + id, {
+    let result = await fetch("https://gentle-fortress-49662.herokuapp.com/api/delete-role/" + id, {
       method: "DELETE",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("login")}`,
@@ -66,7 +66,7 @@ function ListRole() {
   async function getData() {
     showLoader();
 
-    let result = await fetch("https://ancient-savannah-54184.herokuapp.com/api/get/roles", {
+    let result = await fetch("https://gentle-fortress-49662.herokuapp.com/api/get/roles", {
       method: "GET",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("login")}`,
@@ -83,7 +83,7 @@ function ListRole() {
   const Edit = async (id) => {
     let token = "Bearer " + localStorage.getItem("login");
     let result = await fetch(
-      "https://ancient-savannah-54184.herokuapp.com/api/get/role-one/" + id,
+      "https://gentle-fortress-49662.herokuapp.com/api/get/role-one/" + id,
       {
         method: "GET",
         headers: {

@@ -67,7 +67,7 @@ function EditEmployee({
     formData.append("role_id", role_id);
 
     let result = await fetch(
-      `https://ancient-savannah-54184.herokuapp.com/api/update-employee/${Id}?_method=PUT`,
+      `https://gentle-fortress-49662.herokuapp.com/api/update-employee/${Id}?_method=PUT`,
       {
         method: "POST",
         headers: {

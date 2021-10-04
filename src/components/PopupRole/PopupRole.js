@@ -10,7 +10,7 @@ export const PopupRole = ({ trigger, valuerole, setTrigger, getData }) => {
     let formData = new FormData();
     formData.append("role_name", role_name);
     let result = await fetch(
-      `https://ancient-savannah-54184.herokuapp.com/api/update-role/${Id}?_method=PUT`,
+      `https://gentle-fortress-49662.herokuapp.com/api/update-role/${Id}?_method=PUT`,
       {
         method: "POST",
         headers: {

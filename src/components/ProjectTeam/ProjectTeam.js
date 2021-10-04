@@ -29,7 +29,7 @@ export const ProjectTeam = () => {
 
   //use Effect to get the Data for Team and Project
   useEffect(async () => {
-    let team = await fetch("https://ancient-savannah-54184.herokuapp.com/api/get/teams", {
+    let team = await fetch("https://gentle-fortress-49662.herokuapp.com/api/get/teams", {
       method: "GET",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("login")}`,
@@ -38,7 +38,7 @@ export const ProjectTeam = () => {
       },
     });
 
-    let project = await fetch("https://ancient-savannah-54184.herokuapp.com/api/get/projects", {
+    let project = await fetch("https://gentle-fortress-49662.herokuapp.com/api/get/projects", {
       method: "GET",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("login")}`,
@@ -60,7 +60,7 @@ export const ProjectTeam = () => {
     formData.append("project_id", project_id);
     formData.append("team_id", team_id);
 
-    let result = await fetch(`https://ancient-savannah-54184.herokuapp.com/api/proteams`, {
+    let result = await fetch(`https://gentle-fortress-49662.herokuapp.com/api/proteams`, {
       method: "POST",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("login")}`,

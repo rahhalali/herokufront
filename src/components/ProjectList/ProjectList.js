@@ -32,7 +32,7 @@ export const ProjectList = () => {
   const [loader, showLoader, hideLoader] = useFullPageLoader();
 
   async function deleteproject(id) {
-    let result = await fetch("https://ancient-savannah-54184.herokuapp.com/api/delete-project/" + id, {
+    let result = await fetch("https://gentle-fortress-49662.herokuapp.com/api/delete-project/" + id, {
       method: "DELETE",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("login")}`,
@@ -69,7 +69,7 @@ export const ProjectList = () => {
 
   async function getData() {
     showLoader();
-    let result = await fetch("https://ancient-savannah-54184.herokuapp.com/api/get/projects", {
+    let result = await fetch("https://gentle-fortress-49662.herokuapp.com/api/get/projects", {
       method: "GET",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("login")}`,
@@ -86,7 +86,7 @@ export const ProjectList = () => {
   const Edit = async (id) => {
     let token = "Bearer " + localStorage.getItem("login");
     let result = await fetch(
-      "https://ancient-savannah-54184.herokuapp.com/api/get/project-one/" + id,
+      "https://gentle-fortress-49662.herokuapp.com/api/get/project-one/" + id,
       {
         method: "GET",
         headers: {
