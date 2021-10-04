@@ -27,7 +27,10 @@ function Login() {
         "Content-Type": "application/json",
         Access: "application/json",
       },
-    });
+    }).catch(e,()=>{
+       console.log(e);
+    })
+  
     let result1 = await result.json();
    
     if (result1.status === 201) {
