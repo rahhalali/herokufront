@@ -20,17 +20,15 @@ function Login() {
    
     let item = { email, password };
    
-    let result = await fetch(`https://ancient-savannah-54184.herokuapp.com/api/login`, {
+    try{
+let result = await fetch(`https://ancient-savannah-54184.herokuapp.com/api/login`, {
       method: "POST",
       body: JSON.stringify(item),
       headers: {
         "Content-Type": "application/json",
         Access: "application/json",
       },
-    }).catch(e,()=>{
-       console.log(e);
     })
-  
     let result1 = await result.json();
    
     if (result1.status === 201) {
@@ -58,6 +56,12 @@ function Login() {
         progress: undefined,
       });
     }
+  
+    }catch(error){
+      console.log(error)
+    }
+    
+   
   };
   return (
     <>
